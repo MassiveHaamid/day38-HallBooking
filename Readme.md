@@ -10,9 +10,9 @@ Endpoints
 
 Create a Room
 - Endpoint: `/createRoom`
-- Method: `POST`
+- Method: `POST http://localhost:3000/createRoom`
 - Description: Create a new room with the specified number of seats, amenities, and price per hour.
-- Request Body:
+- Request Body -> raw -> JSON
   {
     "seats": 50,
     "amenities": ["Projector", "Whiteboard"],
@@ -30,9 +30,9 @@ Create a Room
 
 Book a Room
 - Endpoint: `/bookRoom`
-- Method: `POST`
+- Method: `POST http://localhost:3000/bookRoom`
 - Description: Book a room for a customer with the specified details.
-- Request Body:
+- Request Body -> raw -> JSON
   {
     "customerName": "John Doe",
     "date": "2023-12-01",
